@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--================= FAVICON =================-->
+    <link rel="icon" type="image/svg" href="img/Favicon SLEarning.svg">
+
+    <!--================= REMIX ICON =================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    />
+
+    <!--================= SWIPER CSS =================-->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <!--================= CSS =================-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>SightlessLearning</title>
+  </head>
+
+  <body>
+    <!--================= HEADER =================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">
+          <i class="ri-book-3-line">SightlessLearning</i>
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link" >
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#new" class="nav__link">
+                <i class="ri-book-3-line"></i>
+                <span>List Book</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="ri-news-fill"></i>
+                <span>News</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+
+          <!-- Login Button -->
+          <i class="ri-user-line login-button" id="login-button"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--================= LOGIN =================-->
+    <div class="login grid" id="login-content">
+      <form action="" class="login__form grid">
+        <h3 class="login__title">Log In</h3>
+
+        <div class="login__group grid">
+          <div>
+            <label for="login-email" class="login__label">Email</label>
+            <input
+              type="email"
+              placeholder="Write your email"
+              id="login-email"
+              class="login__input"
+            />
+          </div>
+
+          <div>
+            <label for="login-pass" class="login__label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              id="login-pass"
+              class="login__input"
+            />
+          </div>
+        </div>
+
+        <div>
+          <span class="login__signup">
+            You do not have an account? <a href="#">Sign up</a>
+          </span>
+          <a href="#" class="login__forgot">You forgot your password</a>
+
+          <button type="submit" class="login__button button">Log In</button>
+        </div>
+      </form>
+
+      <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main"></main>
+
+    <!--================= HOME =================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">
+            Digital Audio Book
+          </h1>
+          <p class="home__description">
+            Explore our vast collection of digital books available in accessible
+            formats. Experience the joy of reading through audio narration,
+            braille, or screen readers..
+          </p>
+
+          <a href="#new" class="button">Explore Now</a>
+        </div>
+
+        <div class="home__images">
+          <div class="home__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="home__article swiper-slide">
+                <img src="img/book-6.png" alt="image" class="home__img" />
+              </article>
+
+              <article class="home__article swiper-slide">
+                <img src="img/book-7.png" alt="image" class="home__img" />
+              </article>
+
+              <article class="home__article swiper-slide">
+                <img src="img/book-8.png" alt="image" class="home__img" />
+              </article>
+
+              <article class="home__article">
+                <img src="img/book-9.png" alt="image" class="home__img" />
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== NEW BOOKS ====================-->
+    <section class="new section" id="new">
+      <h2 class="section__title">List Books</h2>
+
+      <!--Baris 1-->
+      <div class="new__container container">
+        <div class="new__swiper swiper">
+          <div class="swiper-wrapper">
+            <!--1-->
+            <a href="canterville.html" class="new__card swiper-slide">
+              <img src="img/1.png" alt="image" class="new__img" />
+              <div>
+                <h2 class="new__title">The Canterville Ghost</h2>
+
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--2-->
+            <a href="habisgelap.html" class="new__card swiper-slide">
+              <img src="img/2.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Habis Gelap Terbitlah Terang</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+            <!--3-->
+            <a href="thegrand.html" class="new__card swiper-slide">
+              <img src="img/3.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">The Grand Babylon Hotel</h2>
+                <div class="new__prices">
+                  <span class="new__discount">.</span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+            <!--4-->
+            <a href="timunmas.html" class="new__card swiper-slide">
+              <img src="img/4.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Timun Mas</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+            <!--5-->
+            <a href="kasihtaksampai.html" class="new__card swiper-slide">
+              <img src="img/5.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Kasih Tak Sampai</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+            <!--6-->
+            <a href="drjekyl.html" class="new__card swiper-slide">
+              <img src="img/6.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Dr. Jekyll dan Mr. Hyde</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+            <!--7-->
+            <a href="a.html" class="new__card swiper-slide">
+              <img src="img/7.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Alice’s Adventures In Wonderland</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Baris 2-->
+      <div class="new__container container">
+        <div class="new__swiper swiper">
+          <div class="swiper-wrapper">
+            <!--8-->
+            <a href="olivertwist.html" class="new__card swiper-slide">
+              <img src="img/8.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Oliver Twist</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--9-->
+            <a href="whitefang.html" class="new__card swiper-slide">
+              <img src="img/9.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">White Fang</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--10-->
+            <a href="sekarkarya.html" class="new__card swiper-slide">
+              <img src="img/10.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Sekar Karya</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--11-->
+            <a href="kinglear.html" class="new__card swiper-slide">
+              <img src="img/11.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">King Lear</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--12-->
+            <a href="three.html" class="new__card swiper-slide">
+              <img src="img/12.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">唐诗三百首，卷一 Three Hundred Tang Poems</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--13-->
+            <a href="dizi.html" class="new__card swiper-slide">
+              <img src="img/13.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">Di Zi Gui</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--14-->
+            <a href="theanti.html" class="new__card swiper-slide">
+              <img src="img/14.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">The Antichrist</h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+
+            <!--15-->
+            <a href="theartofwar.html" class="new__card swiper-slide">
+              <img src="img/15.png" alt="image" class="new__img" />
+
+              <div>
+                <h2 class="new__title">The Art of War </h2>
+                <div class="new__prices">
+                  <span class="new__discount"></span>
+                  <span class="new__price"></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    
+
+    <!--==================== FOOTER ====================-->
+    <!--Footer Start-->
+    <footer>
+      <div class="credit">
+        <p>Created By Seal Team | © 2023</p>
+      </div>
+
+      </div>
+      <span class="footer__copy"></span>  
+    </footer>
+
+
+    <!--================= SCROLLREVEAL =================-->
+    <script src="scrollreveal.min.js"></script>
+
+    <!--================= SWIPER JS =================-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--================= MAIN JS =================-->
+    <script src="main.js"></script>
+  </body>
+</html>
